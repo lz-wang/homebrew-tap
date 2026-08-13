@@ -32,3 +32,21 @@ jobs:
           brew audit --strict --formula lz-wang/tap/m2h
           brew install --formula lz-wang/tap/m2h
           brew test lz-wang/tap/m2h
+
+  itb:
+    name: Verify itb Formula
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Tap local repository
+        shell: bash
+        run: brew tap lz-wang/tap "file://${GITHUB_WORKSPACE}"
+
+      - name: Audit, install, and test Formula
+        shell: bash
+        run: |
+          set -euo pipefail
+          brew audit --strict --formula lz-wang/tap/itb
+          brew install --formula lz-wang/tap/itb
+          brew test lz-wang/tap/itb
