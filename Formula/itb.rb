@@ -2,7 +2,6 @@ class Itb < Formula
   desc "Image processing command-line toolbox"
   homepage "https://github.com/lz-wang/image-tool-box"
   license "MIT"
-  version "0.4.0"
 
   on_macos do
     on_arm do
