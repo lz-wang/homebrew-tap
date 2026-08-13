@@ -2,6 +2,7 @@ class Itb < Formula
   desc "Image processing command-line toolbox"
   homepage "https://github.com/lz-wang/image-tool-box"
   license "MIT"
+  version "0.4.0"
 
   on_macos do
     on_arm do
@@ -32,6 +33,6 @@ class Itb < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/itb version")
+    assert_match "itb version v0.4.0", shell_output("#{bin}/itb version")
   end
 end
