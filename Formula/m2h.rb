@@ -5,25 +5,25 @@ class M2h < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/lz-wang/m2h/releases/download/v0.12.0/m2h_0.12.0_darwin_arm64.tar.gz"
-      sha256 "a50c534ab877009e0e0816429355a02022645cc9f8f9ffb23dee9480b00e673e"
+      url "https://github.com/lz-wang/m2h/releases/download/v0.13.0/m2h_0.13.0_darwin_arm64.tar.gz"
+      sha256 "54430db6b489d9ba79e9e2d88dfd3af774267f135a59b4ce367d972690592b7e"
     end
 
     on_intel do
-      url "https://github.com/lz-wang/m2h/releases/download/v0.12.0/m2h_0.12.0_darwin_amd64.tar.gz"
-      sha256 "6cdf9ffe2853292c522f3b0b949e38e135bcb01c433ead95a7be52b606df7dc5"
+      url "https://github.com/lz-wang/m2h/releases/download/v0.13.0/m2h_0.13.0_darwin_amd64.tar.gz"
+      sha256 "34120af5ed3e5bfb98bdb43d722ba9337f7b3b4da8af737280ae8250c83fb0ad"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lz-wang/m2h/releases/download/v0.12.0/m2h_0.12.0_linux_arm64.tar.gz"
-      sha256 "e12807f5a052be9221dac38c8e6e411565b6fa2cff9a2de1c610295bccbe7b76"
+      url "https://github.com/lz-wang/m2h/releases/download/v0.13.0/m2h_0.13.0_linux_arm64.tar.gz"
+      sha256 "e02443cdc4b9ae4d7345c65054695930d8a90f6da8371285f06b955782f834a0"
     end
 
     on_intel do
-      url "https://github.com/lz-wang/m2h/releases/download/v0.12.0/m2h_0.12.0_linux_amd64.tar.gz"
-      sha256 "408d7a5ddecc5965747bd91b6ff9009922ea949fd2c5e2e0dd8e4fd6d17ed6af"
+      url "https://github.com/lz-wang/m2h/releases/download/v0.13.0/m2h_0.13.0_linux_amd64.tar.gz"
+      sha256 "d2de77aa7d103a4c731f0fa5fd65cf8c90d7c5a68e6506326ec20f334b578cea"
     end
   end
 
@@ -33,7 +33,7 @@ class M2h < Formula
 
   test do
     (testpath/"example.md").write "# m2h\n"
-    system bin/"m2h", "convert", "example.md"
+    system bin/"m2h", "export", "example.md"
     assert_path_exists testpath/"example.html"
     assert_match "<h1", (testpath/"example.html").read
   end
