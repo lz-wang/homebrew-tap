@@ -5,25 +5,25 @@ class Itb < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/lz-wang/image-tool-box/releases/download/v0.9.2/itb_0.9.2_macos_arm64.tar.gz"
-      sha256 "845fac359e0adccfd51eb3ce0b8c0436902d6feeb53979a45c30c6630ea3c3af"
+      url "https://github.com/lz-wang/image-tool-box/releases/download/v0.9.3/itb_0.9.3_macos_arm64.tar.gz"
+      sha256 "7a425e1f6895f50c5a746a249cbcba1daa408efcfaa30c4f40cd8fc5370f0150"
     end
 
     on_intel do
-      url "https://github.com/lz-wang/image-tool-box/releases/download/v0.9.2/itb_0.9.2_macos_amd64.tar.gz"
-      sha256 "2b8799c61727736fd281724981669bfc214d9bae2ca729f7912612e42b57f818"
+      url "https://github.com/lz-wang/image-tool-box/releases/download/v0.9.3/itb_0.9.3_macos_amd64.tar.gz"
+      sha256 "8447cd01684b770e102a87611d4d15dc4349f8a4a30e9b93a454db12579509f1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lz-wang/image-tool-box/releases/download/v0.9.2/itb_0.9.2_linux_arm64.tar.gz"
-      sha256 "cb4dd3b9f23d4cace1d0651db67e2cbc20768f1c6d69ae731b854741da10c364"
+      url "https://github.com/lz-wang/image-tool-box/releases/download/v0.9.3/itb_0.9.3_linux_arm64.tar.gz"
+      sha256 "911dd6ffe82158957454cae2018de1bb0d81a9b28d388af7ace5789ba3d3aa35"
     end
 
     on_intel do
-      url "https://github.com/lz-wang/image-tool-box/releases/download/v0.9.2/itb_0.9.2_linux_amd64.tar.gz"
-      sha256 "f919c2105def2de4ec18e6c34447c54d6bbf613ddb80f3cb3c04ae032e4d178e"
+      url "https://github.com/lz-wang/image-tool-box/releases/download/v0.9.3/itb_0.9.3_linux_amd64.tar.gz"
+      sha256 "5be253dc1fcf102b16fb90f6dcec9c6dce9c37c99bd372191e040341ccaf0678"
     end
   end
 
@@ -32,6 +32,6 @@ class Itb < Formula
   end
 
   test do
-    assert_match "itb version v0.9.2", shell_output("#{bin}/itb version")
+    assert_match "itb version v0.9.3", shell_output("#{bin}/itb version")
   end
 end
