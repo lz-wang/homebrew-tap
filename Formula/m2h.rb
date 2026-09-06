@@ -5,25 +5,25 @@ class M2h < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/lz-wang/m2h/releases/download/v0.17.2/m2h_0.17.2_darwin_arm64.tar.gz"
-      sha256 "cb26f97edbdc5b0cd3953ef2b5ef8199980cd2b4d49605262aba8bc7b87a37f9"
+      url "https://github.com/lz-wang/m2h/releases/download/v0.18.0/m2h_0.18.0_darwin_arm64.tar.gz"
+      sha256 "aef29274f6f7d8ef75f6fe1b57340f48b0d582fcec3f105d6732913eb4e2edf8"
     end
 
     on_intel do
-      url "https://github.com/lz-wang/m2h/releases/download/v0.17.2/m2h_0.17.2_darwin_amd64.tar.gz"
-      sha256 "9efa97eddeaf99a3ef78da0b8c5a3477d77befcbbaf7dcd91f200870c4639917"
+      url "https://github.com/lz-wang/m2h/releases/download/v0.18.0/m2h_0.18.0_darwin_amd64.tar.gz"
+      sha256 "f8ff52fbe29e3850de5cf4c6aaf9c4be48e0c42a3236b550ed2ab5471fe3f8c1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lz-wang/m2h/releases/download/v0.17.2/m2h_0.17.2_linux_arm64.tar.gz"
-      sha256 "87b86811a8a542ab1578ac9bb1196e914f3bdcdaf77136595d736fa915a49083"
+      url "https://github.com/lz-wang/m2h/releases/download/v0.18.0/m2h_0.18.0_linux_arm64.tar.gz"
+      sha256 "ad8d0397419fb24a6e79a27b8e2dc46042bebdd096ca1e9f5f036e53aaa018d1"
     end
 
     on_intel do
-      url "https://github.com/lz-wang/m2h/releases/download/v0.17.2/m2h_0.17.2_linux_amd64.tar.gz"
-      sha256 "8ea0e603ebe6209d9abd396b00a5a6bce28b5d2b5fedd21600281ff3e234108b"
+      url "https://github.com/lz-wang/m2h/releases/download/v0.18.0/m2h_0.18.0_linux_amd64.tar.gz"
+      sha256 "27d9c403a0070a405d6123b356564d6aa27b363eca16458001f1c14bc35bf586"
     end
   end
 
