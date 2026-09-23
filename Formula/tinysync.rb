@@ -5,25 +5,25 @@ class Tinysync < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/lz-wang/tinysync/releases/download/v0.11.0/tinysync_0.11.0_darwin_arm64.tar.gz"
-      sha256 "fbcf01f65ede79834ffd15b4bbe758fe2f6f4a1f945a89929f0ea87d83fbe0d4"
+      url "https://github.com/lz-wang/tinysync/releases/download/v0.12.0/tinysync_0.12.0_darwin_arm64.tar.gz"
+      sha256 "9bcd425febe92c1f8a013098f763ccc7615cba0633c3ffb3484c8ef999b4e3ee"
     end
 
     on_intel do
-      url "https://github.com/lz-wang/tinysync/releases/download/v0.11.0/tinysync_0.11.0_darwin_amd64.tar.gz"
-      sha256 "a13f458275e70942b19d7d10caa58dfe7f4e9452b84a4abe27769139cc5329a9"
+      url "https://github.com/lz-wang/tinysync/releases/download/v0.12.0/tinysync_0.12.0_darwin_amd64.tar.gz"
+      sha256 "9d5d24e9175d9db27a48824009ccfade2d74f2978f6751904344ab830b662e7d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lz-wang/tinysync/releases/download/v0.11.0/tinysync_0.11.0_linux_arm64.tar.gz"
-      sha256 "fb426223029da1220b17337e52761867df1956a94222d0e21c8bbbe9a7fd0a20"
+      url "https://github.com/lz-wang/tinysync/releases/download/v0.12.0/tinysync_0.12.0_linux_arm64.tar.gz"
+      sha256 "61736f7a7c2d82e6169be05f3e3112243dcc986729698f832b7af681152ee376"
     end
 
     on_intel do
-      url "https://github.com/lz-wang/tinysync/releases/download/v0.11.0/tinysync_0.11.0_linux_amd64.tar.gz"
-      sha256 "ce23d329357246028e333c64b3ef2a20bfa49a33a4cf3c784e37cc3c8adb87b3"
+      url "https://github.com/lz-wang/tinysync/releases/download/v0.12.0/tinysync_0.12.0_linux_amd64.tar.gz"
+      sha256 "b6d58ba405a02710e92a225e7595be1743f0bd1424233b11d808da1235fe40b7"
     end
   end
 
