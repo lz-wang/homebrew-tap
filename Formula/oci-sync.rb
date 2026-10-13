@@ -1,29 +1,29 @@
 class OciSync < Formula
   desc "OCI container image synchronization tool with Web UI and scheduling"
   homepage "https://github.com/lz-wang/homebrew-tap"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/lz-wang/homebrew-tap/releases/download/oci-sync-v0.3.1/oci-sync_0.3.1_darwin_arm64.tar.gz"
-      sha256 "4330384b917af01f65250bb8f6b869492d585f7f0381ce11d12f12d1881c5d04"
+      url "https://github.com/lz-wang/homebrew-tap/releases/download/oci-sync-v0.3.2/oci-sync_0.3.2_darwin_arm64.tar.gz"
+      sha256 "0bcaf27108ae8c4ea65f862057531c4d5c9140ed63a91fe14ce0f5e897748b0d"
     end
 
     on_intel do
-      url "https://github.com/lz-wang/homebrew-tap/releases/download/oci-sync-v0.3.1/oci-sync_0.3.1_darwin_amd64.tar.gz"
-      sha256 "203de5f54c77d9e6f5ccb17e360cd6ab3131f38e06693a19045fe8b74bbe3db5"
+      url "https://github.com/lz-wang/homebrew-tap/releases/download/oci-sync-v0.3.2/oci-sync_0.3.2_darwin_amd64.tar.gz"
+      sha256 "436c114daceb0bbfdb6643e6cce72e3a8e048e8919dae7740903777db4fbc085"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lz-wang/homebrew-tap/releases/download/oci-sync-v0.3.1/oci-sync_0.3.1_linux_arm64.tar.gz"
-      sha256 "0a9783f87de75a1e629b1fbe11b205b752ea9ec70b3c724e6b6991bbc041e35d"
+      url "https://github.com/lz-wang/homebrew-tap/releases/download/oci-sync-v0.3.2/oci-sync_0.3.2_linux_arm64.tar.gz"
+      sha256 "bdd1a2f019c7dcfd5465efc6de1b23673c792ee572afd3f5dea823dfef99d1db"
     end
 
     on_intel do
-      url "https://github.com/lz-wang/homebrew-tap/releases/download/oci-sync-v0.3.1/oci-sync_0.3.1_linux_amd64.tar.gz"
-      sha256 "b7d05734d951c30e8d73a08516cd44aa55368c93d79b1dbdcf07c941f8085c4f"
+      url "https://github.com/lz-wang/homebrew-tap/releases/download/oci-sync-v0.3.2/oci-sync_0.3.2_linux_amd64.tar.gz"
+      sha256 "d7d7e0de7148fca276cfc724e12523b37ef7c7ca00258c22733cf2ef6165eedc"
     end
   end
 
