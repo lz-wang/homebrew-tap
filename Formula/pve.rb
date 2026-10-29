@@ -2,25 +2,25 @@ class Pve < Formula
   desc "Personal HomeLab Proxmox VE CLI"
   homepage "https://github.com/lz-wang/pve-cli"
   license "MIT"
-  version "2.0.1"
+  version "3.0.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lz-wang/pve-cli/releases/download/v2.0.1/pve-v2.0.1-darwin-arm64"
-      sha256 "f7673baf1ddb3e19a1cab44bfc1a5f69f14ba4b5aa86baf4988198c490062644"
+      url "https://github.com/lz-wang/pve-cli/releases/download/v3.0.0/pve-v3.0.0-darwin-arm64"
+      sha256 "ee76281d9fc33471ac1a3fb2cdd3bb4fe7c56bf8de36fd2bfb5735dc9c55e9cb"
     else
-      url "https://github.com/lz-wang/pve-cli/releases/download/v2.0.1/pve-v2.0.1-darwin-amd64"
-      sha256 "255e22f3ee727c82d46590967c7ab6b5142bafa6582136c334ccf6566a182559"
+      url "https://github.com/lz-wang/pve-cli/releases/download/v3.0.0/pve-v3.0.0-darwin-amd64"
+      sha256 "798be16cc734ccf38d761744059f77b6d30cbdbbd31defcdac4ea32b4b7209f0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/lz-wang/pve-cli/releases/download/v2.0.1/pve-v2.0.1-linux-arm64"
-      sha256 "982291443c827eeaf7113ad8b526c944c434aa4f7c4abb42d9a32260b81c20de"
+      url "https://github.com/lz-wang/pve-cli/releases/download/v3.0.0/pve-v3.0.0-linux-arm64"
+      sha256 "6ce809460f5367a33ae04cf750c9e44bae0682a692cac7b77d0a8fb08c178778"
     else
-      url "https://github.com/lz-wang/pve-cli/releases/download/v2.0.1/pve-v2.0.1-linux-amd64"
-      sha256 "d3b46fd67c7a3622ac52e6bd45d4ebcc7da9e6d2cee36e35dc5361e3ba5c2d4d"
+      url "https://github.com/lz-wang/pve-cli/releases/download/v3.0.0/pve-v3.0.0-linux-amd64"
+      sha256 "3c6f1e8239095a3b3bce37b270ab1b7041721d7ee9f16742e19314e2f44c348c"
     end
   end
 
@@ -31,6 +31,6 @@ class Pve < Formula
   end
 
   test do
-    assert_match "v2.0.1", shell_output("#{bin}/pve version -o json")
+    assert_match "v3.0.0", shell_output("#{bin}/pve version -o json")
   end
 end
