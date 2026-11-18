@@ -29,6 +29,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          brew trust --formula lz-wang/tap/m2h
           brew audit --strict --formula lz-wang/tap/m2h
           brew install --formula lz-wang/tap/m2h
           brew test lz-wang/tap/m2h
@@ -47,6 +48,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          brew trust --formula lz-wang/tap/itb
           brew audit --strict --formula lz-wang/tap/itb
           brew install --formula lz-wang/tap/itb
           brew test lz-wang/tap/itb
