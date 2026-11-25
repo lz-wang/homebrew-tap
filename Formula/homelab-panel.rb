@@ -5,25 +5,25 @@ class HomelabPanel < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/lz-wang/homelab-panel/releases/download/v0.5.0/homelab-panel_0.5.0_darwin_arm64.tar.gz"
-      sha256 "71ea0de8eb2189a4ffc3a283208e5a14d17d13179b152638eea45b8604ea8e9f"
+      url "https://github.com/lz-wang/homelab-panel/releases/download/v0.5.1/homelab-panel_0.5.1_darwin_arm64.tar.gz"
+      sha256 "8d532a39924aedb9b431904e015df4e8f7506593a36290e7a6e5544514211b24"
     end
 
     on_intel do
-      url "https://github.com/lz-wang/homelab-panel/releases/download/v0.5.0/homelab-panel_0.5.0_darwin_amd64.tar.gz"
-      sha256 "22033efa4330c9999ed28df87426e3c326c1c02638febfb4f12ea9ceece8b496"
+      url "https://github.com/lz-wang/homelab-panel/releases/download/v0.5.1/homelab-panel_0.5.1_darwin_amd64.tar.gz"
+      sha256 "0397a0a94ef87c2bd872cc5e217fad8352e151814be0c15940ad769c67074b60"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lz-wang/homelab-panel/releases/download/v0.5.0/homelab-panel_0.5.0_linux_arm64.tar.gz"
-      sha256 "6ce9b5f0af3cd49d6846afe37be83853603fdde8fbb8f0824955462ed374ddf1"
+      url "https://github.com/lz-wang/homelab-panel/releases/download/v0.5.1/homelab-panel_0.5.1_linux_arm64.tar.gz"
+      sha256 "27ae54a32072c5c7924d0f0b3a7259d93ba9505b0017528eabc11469a7de62b9"
     end
 
     on_intel do
-      url "https://github.com/lz-wang/homelab-panel/releases/download/v0.5.0/homelab-panel_0.5.0_linux_amd64.tar.gz"
-      sha256 "6a16439a17562ce347a12175419fd3fe1fdb3d6eb1d7fa59de06dca21d632c93"
+      url "https://github.com/lz-wang/homelab-panel/releases/download/v0.5.1/homelab-panel_0.5.1_linux_amd64.tar.gz"
+      sha256 "99a32196646027b599b3387134da5dc1487265464100af2d535d5b3eb83725cc"
     end
   end
 
@@ -32,6 +32,6 @@ class HomelabPanel < Formula
   end
 
   test do
-    assert_match "0.5.0", shell_output("#{bin}/homelab-panel version")
+    assert_match "0.5.1", shell_output("#{bin}/homelab-panel version")
   end
 end
